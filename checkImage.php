@@ -1,21 +1,24 @@
 <?php
 	$arrayNum = "0123456789";
-	$arrayChar = "abcdefghigklmnopqrstuvwxyz";
-
+	// $arrayChar = "abcdefghigklmnopqrstuvwxyz";
+	$arrayChar = "0123456789abcdefghigklmnopqrstuvwxyz";
 
 	$img = imagecreate(100, 50);
-	$blue = imagecolorallocate($img, 100, 100, 100);
-	$green = imagecolorallocate($img, 0, 255, 0);
+	$blue = imagecolorallocate($img, 0, 0, 0);
+	$green = imagecolorallocate($img, 255, 255, 255);
 
-	// for ($i=0; $i < 3; $i++) { 
-	// 	$offset = $i * 10;
-		imagettftext($img, 10, 0, 20, 0, $green, "ARIAL.TTF", "a");
-	// }
-	// imagerectangle($img, 0, 0, 20, 20, $blue);
-	imagefill($img, 0, 0, $blue);
+	$textSize = 25;
+	$roate = 0;
+	$X = 0;
+	$Y = $textSize + 5;
 
-	header('Content_type: image/png');
+	for ($i=0; $i < 4; $i++) { 
+		$X = $i * $textSize;
+		$text = $arrayChar[rand(0, strlen($arrayChar))];
+		imagettftext($img, $textSize, $roate, $X, $Y, $green, "arial.ttf", $text);
+	}
+
+	header('Content-type: image/png');
 	imagepng($img);
-	
 	imagedestroy($img);
 ?>
