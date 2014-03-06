@@ -1,7 +1,7 @@
 <?php
 	$arrayNum = "0123456789";
 	// $arrayChar = "abcdefghigklmnopqrstuvwxyz";
-	$arrayChar = "0123456789abcdefghigklmnopqrstuvwxyz";
+	$arrayChar = "0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSYUVWXYZ";
 
 	$img = imagecreate(100, 50);
 	$blue = imagecolorallocate($img, 0, 0, 0);
@@ -14,7 +14,7 @@
 
 	for ($i=0; $i < 4; $i++) { 
 		$X = $i * $textSize;
-		$text = $arrayChar[rand(0, strlen($arrayChar))];
+		$text = $arrayChar[rand(0, strlen($arrayChar)-1)];
 		imagettftext($img, $textSize, $roate, $X, $Y, $green, "arial.ttf", $text);
 	}
 
