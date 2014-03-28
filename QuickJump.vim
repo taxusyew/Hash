@@ -3,6 +3,27 @@ function! QuickJump()
     if nxtchar == '"'
       
     end
+    
+    if nxtchar == "'"
+      
+    end
+    
+    if nxtchar == ')'
+      
+    end
+    
+    if nxtchar == ']'
+      
+    end
+    
+    if nxtchar == '}'
+      
+    end
+    
+    if nxtchar == '>'
+      
+    end
+    
 endfunction
 
 inormap <tab> <ESC>:call QuickJump()
