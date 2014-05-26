@@ -12,3 +12,5 @@ Hash
 4.添加PHP扫描PE文件  pe.php  
 
 5.添加VIM快速移动插件 QuickJump.vim
+
+6.添加判断质数文件
