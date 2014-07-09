@@ -14,3 +14,5 @@ Hash
 5.添加VIM快速移动插件 QuickJump.vim
 
 6.添加判断质数文件
+
+7.添加遍历windos下线程、及其模块  findprocess.cpp
