@@ -8,8 +8,7 @@ void main()
 	HANDLE hprocSnap = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
 	PROCESSENTRY32  pe;
 	MODULEENTRY32 me32;
-	//hprocSnap = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
-
+	
 	pe.dwSize = sizeof(PROCESSENTRY32);
 	BOOL existProc = Process32First(hprocSnap, &pe);
 	TCHAR*   shortpath = new TCHAR[256];
@@ -40,15 +39,9 @@ void main()
 
 		while (Module32Next(hModuleSnap, &me32))
 		{
-			printf("%s\n", me32.szExePath);
+			_tprintf( TEXT("     Executable     = %s\n"),     me32.szExePath );
 		}
 		
-		//Module32First(hModule, &minfo);  
-		//GetShortPathName(minfo.szExePath,shortpath,256); 
-		
-		//printf("%d", pe.th32ProcessID);
-		//printf("%s --- %s \n",pe.szExeFile,shortpath); 
-
 	 }while (Process32Next(hprocSnap,&pe));
 	
 
