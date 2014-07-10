@@ -16,3 +16,5 @@ Hash
 6.添加判断质数文件
 
 7.添加遍历windos下线程、及其模块  findprocess.cpp
+
+8.添加找对应进程的全路径
