@@ -1,0 +1,60 @@
+% UTF-8 encoding
+% Compile with latex+dvipdfmx, pdflatex or xelatex
+% XeLaTeX is recommanded
+% Some Chinese fonts should be installed in your system (SimSun, SimHei, FangSong, KaiTi)
+\documentclass[UTF8]{ctexart}
+\begin{document}
+
+superscripte: $$2x^3$$
+$$2x^{34}$$
+$$2x^{3x+4}$$
+
+subscripts:
+$$x_1$$
+$$x_{12}$$
+
+greek letters:
+$$\pi$$
+$$\alpha$$
+
+trig functions:
+$$y=\sin{x}$$
+
+square roots
+$$\sqrt{2}$$
+$$\sqrt[3]{2}$$
+$$\sqrt{1+\sqrt{x}}$$
+
+fractions:
+About $\displaystyle{\frac{2}{3}}$ of the glass is full.
+
+$$\frac{x}{x^2+x+1}$$
+
+$$\frac{\sqrt{x+1}}{\sqrt{x-1}}$$
+$$\frac{1}{1+\frac{1}{x}}$$
+
+$$\left|\frac{x}{1+x}\right|$$
+
+$$\left.\frac{dy}{dx}\right|_{x=1}$$
+
+\begin{tabular}{c|ccccc}
+\hline
+$x$ & 1 &2&3&4&5 \\ \hline
+$f(x)$ & 10 &11 &12 &13 &14 \\ \hline
+\end{tabular}
+
+\begin{eqnarray}
+5x^2-9&=&x+3\\
+4x^2&=&12\\
+x^3&=&3\\
+x&\approx&\pm1.732
+\end{eqnarray}
+
+\begin{eqnarray*}
+5x^2-9&=&x+3\\
+4x^2&=&12\\
+x^3&=&3\\
+x&\approx&\pm1.732
+\end{eqnarray*}
+
+\end{document}
