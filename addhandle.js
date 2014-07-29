@@ -1,5 +1,5 @@
 var eventUtil = {
-	// type Ä¬ÈÏÈ¥µôonµÄÀàĞÍ
+	// type é»˜è®¤å»æ‰onçš„ç±»å‹
 	addHandler:function(element, type, handler){
 		if(element.addEventListener){
 			// DOM2
@@ -12,7 +12,7 @@ var eventUtil = {
 			element['on'+type] = handler;
 		}
 	},
-	// É¾³ı¾ä±ú
+	// åˆ é™¤å¥æŸ„
 	removeHandler:function(element, type, handler){
 		if(element.removeEventListener){
 			// DOM2
