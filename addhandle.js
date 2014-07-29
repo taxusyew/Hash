@@ -24,5 +24,29 @@ var eventUtil = {
 			// DOM0
 			element['on'+type] = null;
 		}
+	},
+	getEvent: function(event){
+		return event? event : window.event;
+	},
+	getType: function(event){
+		return event.type;
+	},
+	getElement: function(event){
+		return event.target || event.srcElement;
+	},
+	preventDefault: function(event){
+		if(event.preventDefault){
+			event.preventDefault();
+		}else {
+			event.returnValue = false;
+		}
+	},
+	stopPropegation: function(event){
+		if(event.stopPropegation){
+			event.stopPropegation();
+		}
+		else{
+			event.cancelBubble = true;
+		}
 	}
 }
