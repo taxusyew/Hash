@@ -18,3 +18,5 @@ Hash
 7.添加遍历windos下线程、及其模块  findprocess.cpp
 
 8.添加找对应进程的全路径
+
+9.添加跨浏览器添加事件处理程序   addhandle.js
