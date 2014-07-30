@@ -21,4 +21,7 @@ Hash
 
 9.添加跨浏览器添加事件处理程序   addhandle.js
 
-10.添加自己的Sublime Theme配色方案，尚未完全处理完成   TLT.tmTheme
+10.添加自己的Sublime Theme配色方案
+
+	TLT.tmTheme      自己配的黄绿色背景
+	TLTdeep.tmTheme  美工配的较深背景
