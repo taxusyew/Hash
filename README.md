@@ -20,3 +20,5 @@ Hash
 8.添加找对应进程的全路径
 
 9.添加跨浏览器添加事件处理程序   addhandle.js
+
+10.添加自己的Sublime Theme配色方案，尚未完全处理完成   TLT.tmTheme
